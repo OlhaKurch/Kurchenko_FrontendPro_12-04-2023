@@ -3,7 +3,7 @@ let arr = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-
 let newArr = [];
 let sum = 0;
 arr.forEach((item) => {
-    if (item >=1) {
+    if (item >=0) {
         sum += item;
         newArr.push(item);
     } else {
