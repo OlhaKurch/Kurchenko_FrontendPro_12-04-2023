@@ -7,7 +7,10 @@ const doMath = () => {
     return doSum;
 }
 const userNumber = doMath();
-userNumber(6);
-userNumber(5);
-userNumber(12);
 
+
+
+let i = 0;
+for(; i < 5;) {
+    console.log(++i);
+}
