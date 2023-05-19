@@ -15,6 +15,10 @@ export class Car {
     }
     aboutCar() {
         console.log(`New car ${this.brend} ${this.model} ${this.color} color with number ${this.number} `);
-        this.owner.aboutHuman();
+        if(this.owner != '') {
+            this.owner.aboutHuman();
+        } else {
+            console.log('This car has not owner')
+        }
     }
 }

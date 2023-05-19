@@ -12,6 +12,6 @@ car1.aboutCar();
 
 let car2 = new Car('BMW', 'x5', 'black', 'AA2277AO');
 car2.buyCar(human2);
-
+car2.aboutCar();
 car2.buyCar(human3);
 car2.aboutCar();
