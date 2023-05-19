@@ -8,11 +8,11 @@ let human2 = new Human('Misha', 'm');
 let human3 = new Human('Ihor', 'm');
 
 
-let flat377 = new Flat;
+let flat377 = new Flat();
 flat377.addResident(human1);
 flat377.addResident(human2);
 
-let flat408 = new Flat;
+let flat408 = new Flat();
 flat408.addResident(human3);
 
 let house = new House(2);
