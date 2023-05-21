@@ -1,6 +1,6 @@
-const MAXARRAY = 25;
-const NICEACCOUNT = 90;
-const MINPRESENT = 0.9;
+const MAX_ARRAY = 25;
+const NICE_ACCOUNT = 90;
+const MIN_PRESENT = 0.9;
 
 export class Student{
     constructor(name, surname, year, account) {
@@ -23,14 +23,14 @@ export class Student{
         return GPA;
     }
     present(){
-        if(this.presentCalendar.length >=MAXARRAY) {
+        if(this.presentCalendar.length >=MAX_ARRAY) {
             console.log(`Stop! Your calendar is full`)
         } else {
             this.presentCalendar.push(true);
         }
     }
     absent(){
-        if(this.presentCalendar.length >=MAXARRAY) {
+        if(this.presentCalendar.length >=MAX_ARRAY) {
             console.log(`Stop! Your calendar is full`)
         } else {
             this.presentCalendar.push(false);
@@ -47,9 +47,9 @@ export class Student{
        return result;
     }
     summary() {
-        if(this.averagePresent() >= MINPRESENT && this.getGPA() >= NICEACCOUNT) {
+        if(this.averagePresent() >= MIN_PRESENT && this.getGPA() >= NICE_ACCOUNT) {
             return console.log('Well done');
-        } else if(this.averagePresent() >= MINPRESENT || this.getGPA() >= NICEACCOUNT) {
+        } else if(this.averagePresent() >= MIN_PRESENT || this.getGPA() >= NICE_ACCOUNT) {
             return console.log('Good');
         } else {
             return console.log('It is terrible');
