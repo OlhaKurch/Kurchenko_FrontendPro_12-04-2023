@@ -68,11 +68,11 @@ function findBalance (arr) {
     return balanceNum;
 }
 findBalance(balance);
-console.log(balanceNum)
+
 balanceNum.forEach((item) => {
-    sum += +item.toFixed(2);
+    sum += +item;
 })
-console.log(sum);
+console.log(sum.toFixed(2));
 
 let tel = [];
 function findTel(arr, obj) {

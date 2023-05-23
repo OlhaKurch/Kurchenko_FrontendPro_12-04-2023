@@ -1,0 +1,7 @@
+div,
+p{
+    display: inline;
+}
+.ghost {
+    display: none;
+}
