@@ -1,0 +1,9 @@
+.voting {
+    display: inline-flex;    
+}
+img {    
+    width: 60px;    
+}
+.variant {
+    margin: 10px; 
+}

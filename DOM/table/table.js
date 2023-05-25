@@ -14,5 +14,4 @@ for (let i = 1; i <= numberTr; i++) {
     }
 }
 
-
 document.body.append(table);
