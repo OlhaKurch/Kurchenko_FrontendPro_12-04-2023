@@ -1,0 +1,24 @@
+p, a {
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.products {
+    padding-left: 160px;
+    cursor: pointer;       
+}
+.products--none {
+    display: none; 
+}
+.products__about {
+    margin-left: 250px;
+    width: 50px;
+    padding: 40px 90px; 
+    border: 1px solid black;   
+}
+.products__about--none {
+    display: none;
+}
