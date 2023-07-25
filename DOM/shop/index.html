@@ -8,82 +8,115 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Catalog</h1>
-    <ul class="category">
-        <h2>Category</h2>
-        <li class="category__item">
-            <a href="#">food</a>
-            <ul class="products products--none">
-                <li class="products__item">
-                    <p>Meat mix</p>
-                    <div class="products__about products__about--none">
-                        <p>fresh meat</p>
-                        <button class="buy">Buy</button>
-                    </div>
-                </li>
-                <li class="products__item">
-                    <p>Fruit mix</p>
-                    <div class="products__about products__about--none">
-                        <p>fresh fruits</p>
-                        <button class="buy">Buy</button>
-                    </div>
-                </li>
-                <li class="products__item">
-                    <p>Vegatable mix</p>
-                    <div class="products__about products__about--none">
-                        <p>fresh vegatables</p>
-                        <button class="buy">Buy</button>
-                    </div>
-                </li>
-            </ul>
-        </li>
-        <li class="category__item">
-            <a href="#">drink</a>
-            <ul class="products products--none">
-                <li class="products__item">
-                    <p>Beer</p>
-                    <div class="products__about products__about--none">
-                        <p>fresh beer</p>
-                        <button class="buy">Buy</button>
-                    </div>
-                </li>
-                <li class="products__item">
-                    <p>Juice</p>
-                    <div class="products__about products__about--none">
-                        <p>sweet juice</p>
-                        <button class="buy">Buy</button>
-                    </div>
-                </li>
-                <li class="products__item">
-                    <p>Coffee</p>
-                    <div class="products__about products__about--none">
-                        <p>black coffee</p>
-                        <button class="buy">Buy</button>
-                    </div>
-                </li>
-            </ul>
-        </li>
-        <li class="category__item">
-            <a href="#">presents</a>
-            <ul class="products products--none">
-                <li class="products__item">
-                    <p>flowers</p>
-                    <div class="products__about products__about--none">
-                        <p>flowers mix</p>
-                        <button class="buy">Buy</button>
-                    </div>
-                </li>
-                <li class="products__item">
-                    <p>Sweets</p>
-                    <div class="products__about products__about--none">
-                        <p>sweet mix</p>
-                        <button class="buy">Buy</button>
-                    </div>
-                </li>                
-            </ul>
-        </li>
-    </ul>
+    <main class="main">
+        <h1>Catalog</h1>
+        <ul class="category">
+            <h2>Category</h2>
+            <li class="category__item">
+                <a href="#">food</a>
+                <ul class="products products--none">
+                    <li class="products__item">
+                        <p>Meat mix</p>
+                        <div class="products__about products__about--none">
+                            <p>fresh meat</p>
+                            <button class="buy">Buy</button>
+                        </div>
+                    </li>
+                    <li class="products__item">
+                        <p>Fruit mix</p>
+                        <div class="products__about products__about--none">
+                            <p>fresh fruits</p>
+                            <button class="buy">Buy</button>
+                        </div>
+                    </li>
+                    <li class="products__item">
+                        <p>Vegatable mix</p>
+                        <div class="products__about products__about--none">
+                            <p>fresh vegatables</p>
+                            <button class="buy">Buy</button>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="category__item">
+                <a href="#">drink</a>
+                <ul class="products products--none">
+                    <li class="products__item">
+                        <p>Beer</p>
+                        <div class="products__about products__about--none">
+                            <p>fresh beer</p>
+                            <button class="buy">Buy</button>
+                        </div>
+                    </li>
+                    <li class="products__item">
+                        <p>Juice</p>
+                        <div class="products__about products__about--none">
+                            <p>sweet juice</p>
+                            <button class="buy">Buy</button>
+                        </div>
+                    </li>
+                    <li class="products__item">
+                        <p>Coffee</p>
+                        <div class="products__about products__about--none">
+                            <p>black coffee</p>
+                            <button class="buy">Buy</button>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="category__item">
+                <a href="#">presents</a>
+                <ul class="products products--none">
+                    <li class="products__item">
+                        <p>flowers</p>
+                        <div class="products__about products__about--none">
+                            <p>flowers mix</p>
+                            <button class="buy">Buy</button>
+                        </div>
+                    </li>
+                    <li class="products__item">
+                        <p>Sweets</p>
+                        <div class="products__about products__about--none">
+                            <p>sweet mix</p>
+                            <button class="buy">Buy</button>
+                        </div>
+                    </li>                
+                </ul>
+            </li>
+        </ul>
+    </main>
     
+    <form class="form formDisplay" action="http://localhost:3000/submit" method="post" target="_blank" onsubmit="return ValidationForm()">
+        <label for="name">ПІБ покупця</label>
+        <input id="name" name="name" type="text"> 
+        <br>
+        <label for="city">Місто</label>
+        <select id="city" name="city" type="text">
+            <option value="Kyiv">Київ</option>
+            <option value="Lviv">Львів</option>
+            <option value="Dnipro">Дніпро</option>
+        </select>
+        <br>
+        <label for="np">Склад Нової пошти для надсилання</label>
+        <input id="np" name="novaPoshta" type="text"> 
+        <br>    
+        <input id="cash" name="pay" type="checkbox" value="cash"> 
+        <label for="cash">Післяплата</label>
+        <input id="card" name="pay" type="checkbox" value="card"> 
+        <label for="card">оплата банківською карткою</label>               
+        <br>
+        <label for="product">Продукт</label>
+        <input id="product" name="product" type="text" readonly> 
+        <br> 
+        <label for="amount">Кількість продукції, що купується</label>
+        <input id="amount" name="amount" type="number"> 
+        <br> 
+        <label for="comment">Коментар до замовлення</label>
+        <textarea id="comment" name="comment"></textarea>   
+        <br>  
+        <button class="submit" type="submit">Надіслати</button>    
+    </form>
+
 
 
 
@@ -91,4 +124,3 @@
   
 </html>
 
-<!-- https:// -->
