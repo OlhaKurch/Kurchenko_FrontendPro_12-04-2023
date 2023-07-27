@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>    
+    <form class="form" action="http://localhost:3000/submit" method="post" target="_blank">
+        <label>Ім'я, Прізвище</label>
+        <input id="name" name="name" type="text"> 
+        <input id="surname" name="suname" type="text"> 
+        <br>
+        <label for="birthday">Дата народження</label>
+        <input id="birthday" name="birthday" type="text"> 
+        <br>  
+        <br>  
+        <fieldset>
+            <legend>Стать</legend>           
+              <input type="radio" id="men" name="gender" value="men">
+              <label for="men">Ч</label>                
+              <input type="radio" id="women" name="gender" value="women">
+              <label for="women">Ж</label>           
+        </fieldset>
+        <br>
+        <label for="city">Місто</label>
+        <select id="city" name="city" type="text">
+            <option id="kyiv" value="Kyiv">Київ</option>
+            <option id="lviv" value="Lviv">Львів</option>
+            <option id="dnipro" value="Dnipro" selected>Дніпро</option>
+        </select>
+        <br>
+        <label for="adress">Адреса</label>
+        <textarea id="adress" name="adress"></textarea>   
+        <br>  
+        <br>  
+        <fieldset>
+            <legend>Мови, якими володіє </legend>           
+            <input id="english" name="lenguage" type="checkbox" value="english"> 
+            <label for="english">Англійська</label> <br>  
+            <input id="ukraine" name="lenguage" type="checkbox" value="ukraine"> 
+            <label for="ukraine">Українська</label> <br>  
+            <input id="spanish" name="lenguage" type="checkbox" value="spanish"> 
+            <label for="spanish">Іспанська</label> <br>  
+            <input id="germany" name="lenguage" type="checkbox" value="germany"> 
+            <label for="germany">Німецька</label>
+        </fieldset>
+
+        <br>  
+        <button class="button" type="button">Зберегти</button>    
+    </form>
+    <table class="table tableDisplay">
+        <caption><h1>Реєстраційні данні прийнято! </h1></caption>
+        <thead>
+        <tr>
+            <th>Прізвище та імя</th>
+            <th>дата народження</th>
+            <th>Стать</th>
+            <th>Місто</th>
+            <th>Адреса</th>
+            <th>Мови</th>
+        </tr>
+        </thead>
+        <tr>
+        <td id="tableName"> </td>
+        <td id="tableBirthday"></td>
+        <td id="tableGender"></td>
+        <td id="tableCity"></td>
+        <td id="tableAdress"></td>
+        <td id="tableLenguage"></td>
+        </tr> 
+
+    <script src="shop.js"></script>
+  
+</html>
+
